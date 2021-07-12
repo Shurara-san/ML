@@ -5,3 +5,4 @@ requests==2.23.0
 catboost
 dill
 sklearn
+Flask
