@@ -1,5 +1,7 @@
 # ML-FinalTask
 
+##### ML: sklearn, pandas, numpy API: flask
+
 ### Источник данных: 
 https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009
 
@@ -34,4 +36,12 @@ https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009
 
 CatBoostClassifier (с подбором оптимальных параметров с помощью GridSearchCV).
 
+### Клонируем репозиторий и создаем образ:
 
+git clone https://github.com/Shurara-san/ML.git
+cd ML
+docker build -t ml_bs/final_task .
+
+### Запускаем контейнер:
+docker run -d -p 8181:8181 -v C:\Users\ShuRaRa_SaN\HW\FinalTask\Final_Model:/models ml_bs/final_task
+12367292e2837a97204e9c1affd66e8dfa10eb469a09b371f00d916f49fae790
